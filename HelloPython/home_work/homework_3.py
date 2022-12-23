@@ -69,19 +69,19 @@
 
 # - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
-fib_1 = fib_2 = 1
-n = abs(int(input()))
-fib_n = [fib_1, fib_2] 
-for i in range(2, n):
-    fib_1, fib_2 = fib_2, fib_1 + fib_2
-    fib_n.append(fib_2)
-fib_n.insert(0, 0)
-n_fib = []
-for i in range(1, len(fib_n)):
-    if i%2 == 0: 
-        n_fib.append(fib_n[i] * -1)
-    else:
-        n_fib.append(fib_n[i])
-for i in range(len(n_fib)):
-    fib_n.insert(0, n_fib[i])
-print(fib_n)
+# fib_1 = fib_2 = 1
+# n = abs(int(input()))
+# fib_n = [fib_1, fib_2] 
+# for i in range(2, n):
+#     fib_1, fib_2 = fib_2, fib_1 + fib_2
+#     fib_n.append(fib_2)
+# fib_n.insert(0, 0)
+# n_fib = []
+# for i in range(1, len(fib_n)):
+#     if i%2 == 0: 
+#         n_fib.append(fib_n[i] * -1)
+#     else:
+#         n_fib.append(fib_n[i])
+# for i in range(len(n_fib)):
+#     fib_n.insert(0, n_fib[i])
+# print(fib_n)
