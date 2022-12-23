@@ -44,22 +44,22 @@
 # print(list)
 # data = open(path, 'r')
 # for line in data:
-#     multpl *= list[int(data[line])]  #не удается корректно конвертировать данные из файла в int
+#     multpl *= list[int(line)]  #не удается корректно конвертировать данные из файла в int
 # data.close()
 # print(multpl)
 
 # задача 5
 # Реализуйте алгоритм перемешивания списка
-print('Введите число: ', end = "")
-n = int(input())
-list = []
-import random
-for i in range(1, n+1):
-    list.append(random.randint(-n, n))
-print(list)
-for i in list:
-    rnd = random.randint(i, n-1)
-    temp = list[i]
-    list[i] = list[rnd]
-    list[rnd] = temp
-print(list)
+# print('Введите число: ', end = "")
+# n = int(input())
+# list = []
+# import random
+# for i in range(1, n+1):
+#     list.append(random.randint(-n, n))
+# print(list)
+# for i in range(n):
+#     rnd = random.randint(i, n-1)
+#     temp = list[i]
+#     list[i] = list[rnd]
+#     list[rnd] = temp
+# print(list)
