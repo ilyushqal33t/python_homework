@@ -54,20 +54,20 @@
 #     data.write('=0')
 
 # 5 Задача.
-import random
-def polynomial(k, path):
-    coef_list = [random.randint(0,100) for i in range(k+1)]
-    print(coef_list)
-    with open(path, 'w') as data:
-        for i in range(k, -1, -1):
-            if coef_list[i] == 0:
-                continue
-            data.write(str(coef_list[i]) + ('*x' if i!=0 else ''))
-            data.write(('**'+str(i)) if i > 1 else '')
-            data.write('+' if i!=0 else '')
-        data.write('=0')
+# import random
+# def polynomial(k, path):
+#     coef_list = [random.randint(0,100) for i in range(k+1)]
+#     print(coef_list)
+#     with open(path, 'w') as data:
+#         for i in range(k, -1, -1):
+#             if coef_list[i] == 0:
+#                 continue
+#             data.write(str(coef_list[i]) + ('*x' if i!=0 else ''))
+#             data.write(('**'+str(i)) if i > 1 else '')
+#             data.write('+' if i!=0 else '')
+#         data.write('=0')
 
-k1 = int(input('Введите натуральную степень k для первого многочлена: '))
-k2 = int(input('Введите натуральную степень k для второго многочлена: '))
-polynomial(k1, 'polinomial_1.txt')
-polynomial(k2, 'polinomial_2.txt')
+# k1 = int(input('Введите натуральную степень k для первого многочлена: '))
+# k2 = int(input('Введите натуральную степень k для второго многочлена: '))
+# polynomial(k1, 'polinomial_1.txt')
+# polynomial(k2, 'polinomial_2.txt')
