@@ -29,9 +29,11 @@
 #     for i in range(len(list)//2):
 #         result_list.append(list[i] * list[len(list) - 1 - i])
 # else:
-#     for i in range(round(len(list)//2) + 1):
+#     for i in range((len(list)//2 + 1)):
 #         result_list.append(list[i] * list[len(list) - 1 - i])
 # print(result_list)
+# print(len(list)//2)
+# print(round(len(list)//2))
 
 # задача 3
 # Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
@@ -41,6 +43,7 @@
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 # list = list(map(float, input("Введите числа через пробел:\n").split()))
 # new_list = []
+# # new_list = [round(i % 1, 2) for i in list if i % 1 != 0]
 # for i in list:
 #     if i%1 != 0:
 #         new_list.append(round(i%1, 2))
