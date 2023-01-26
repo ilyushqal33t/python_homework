@@ -2,7 +2,7 @@ def print_directory():
     print('Введите "all", чтобы посмотреть весь справочник, введите id, чтобы посмотреть данные пользователя: ')
     list = ['id','имя','фамилия','телефон','комментарий']
     id = input()
-    with open('directory.csv', 'r') as data:
+    with open('directory.csv', 'r', encoding = 'UTF-8') as data:
         if id == 'all':
             for line in data:
                 print(line)
