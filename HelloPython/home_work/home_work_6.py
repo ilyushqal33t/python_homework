@@ -1,6 +1,6 @@
 # 45. Найти сумму чисел списка стоящих на нечетной позиции
-# list_a = [2, 32, -1, 5, 10, -6, 2, -6]
-# list_odd_pos = sum(list(filter(lambda x: list_a.index(x)%2, list_a)))
+# list_a = [2, 32, -1, 32, 10, -6, 2, -6]
+# list_odd_pos = sum([val for indx, val in enumerate(list_a) if indx%2])
 # print(list_odd_pos)
 
 # 46. Найти произведение пар чисел списка(парой считаем первый и последний, второй предпоследний и тд)
