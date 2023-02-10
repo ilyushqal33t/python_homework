@@ -23,7 +23,7 @@ def controller(message):
     global flag
     if sweets > 0:
         if flag == 'user':
-            bot.send_message(message.chat.id, f'Ваш ход, введите кол-во кофнет от 0 до {max_sweets}')
+            bot.send_message(message.chat.id, f'Ваш ход, введите кол-во конфет от 0 до {max_sweets}')
             bot.register_next_step_handler(message, user_input)
         else:
             bot_input(message)
